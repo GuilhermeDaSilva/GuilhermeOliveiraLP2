@@ -8,40 +8,44 @@ namespace ConsoleApplication1
 {
     class Program
     {
+        public struct Carro
+        {
+            public string modelo;
+            public double km,mot;             
+        }                               
         static void Main(string[] args)
         {
             int N;
-            string modelo,valores;
-            double km, mot;
-
+            string valores;
+      
             Console.WriteLine("Informe o número de carros no galpão");
             N = Convert.ToInt32(Console.ReadLine());
                                     
             for (int i = 0; i < N; i++)
             {
+                Carro car;
                 Console.WriteLine("Informe o modelo");
-                modelo = Console.ReadLine();
+                car.modelo = Console.ReadLine();
 
                 Console.WriteLine("Informe sua quilometragem");
-                km = Double.Parse(Console.ReadLine());
+                car.km = Double.Parse(Console.ReadLine());
 
                 Console.WriteLine("Informe a potência do motor");
-                mot = Double.Parse(Console.ReadLine());
+                car.mot = Double.Parse(Console.ReadLine());
 
-                valores= Classificar(modelo,km,mot);
-                
-                Console.WriteLine("{0}",valores);
+                valores= Classificar(car);
+
+                Console.WriteLine("{0}", valores);
             }
-
         }
-        static string Classificar(string mod, double klm, double motorpot)
+        static string Classificar(Carro paramet)
         {
             string tipo, tipod, tudo;
-            if (klm <= 5000)
+            if (paramet.km <= 5000)
             {
                 tipo = "novo";
             }
-            else if (klm > 5000 && klm <= 30000)
+            else if (paramet.km > 5000 && paramet.km <= 30000)
             {
                 tipo = "seminovo";
             }
@@ -50,11 +54,11 @@ namespace ConsoleApplication1
                 tipo = "velho";
             }
 
-            if (motorpot > 200)
+            if (paramet.mot > 200)
             {
                 tipod = "potente";
             }
-            else if (motorpot >= 120 && motorpot <= 200)
+            else if (paramet.mot >= 120 && paramet.mot <= 200)
             {
                 tipod = "forte";
             }
@@ -62,7 +66,7 @@ namespace ConsoleApplication1
             {
                 tipod = "popular";
             }
-            tudo = mod + " - " + tipo + " " + tipod;
+            tudo = paramet.modelo + " - " + tipo + " " + tipod;
             return tudo;            
         }
     }
