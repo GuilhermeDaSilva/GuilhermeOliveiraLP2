@@ -11,19 +11,20 @@ namespace ConsoleApplication1
         public struct Carro
         {
             public string modelo;
-            public double km,mot;             
+            public double km, mot;
+            
         }                               
         static void Main(string[] args)
         {
-            int N;
-            string valores;
-      
+            Carro car;
+            int N, i;
             Console.WriteLine("Informe o número de carros no galpão");
             N = Convert.ToInt32(Console.ReadLine());
+            
+            string[] valores = new string[N];
                                     
-            for (int i = 0; i < N; i++)
-            {
-                Carro car;
+            for (i = 0; i < N; i++)
+            {               
                 Console.WriteLine("Informe o modelo");
                 car.modelo = Console.ReadLine();
 
@@ -33,10 +34,12 @@ namespace ConsoleApplication1
                 Console.WriteLine("Informe a potência do motor");
                 car.mot = Double.Parse(Console.ReadLine());
 
-                valores= Classificar(car);
-
-                Console.WriteLine("{0}", valores);
+                valores[i]= Classificar(car);                
             }
+            for (i = 0; i < N; i++)
+            {
+                Console.WriteLine("{0}", valores[i]);
+            }        
         }
         static string Classificar(Carro paramet)
         {
@@ -69,5 +72,6 @@ namespace ConsoleApplication1
             tudo = paramet.modelo + " - " + tipo + " " + tipod;
             return tudo;            
         }
+        
     }
 }
