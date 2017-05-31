@@ -1,0 +1,6 @@
+c:\users\alunoct\documents\visual studio 2013\Projects\ObjetoEmPlano2D\ObjetoEmPlano2D\bin\Debug\ObjetoEmPlano2D.exe.config
+c:\users\alunoct\documents\visual studio 2013\Projects\ObjetoEmPlano2D\ObjetoEmPlano2D\bin\Debug\ObjetoEmPlano2D.exe
+c:\users\alunoct\documents\visual studio 2013\Projects\ObjetoEmPlano2D\ObjetoEmPlano2D\bin\Debug\ObjetoEmPlano2D.pdb
+c:\users\alunoct\documents\visual studio 2013\Projects\ObjetoEmPlano2D\ObjetoEmPlano2D\obj\Debug\ObjetoEmPlano2D.csprojResolveAssemblyReference.cache
+c:\users\alunoct\documents\visual studio 2013\Projects\ObjetoEmPlano2D\ObjetoEmPlano2D\obj\Debug\ObjetoEmPlano2D.exe
+c:\users\alunoct\documents\visual studio 2013\Projects\ObjetoEmPlano2D\ObjetoEmPlano2D\obj\Debug\ObjetoEmPlano2D.pdb
