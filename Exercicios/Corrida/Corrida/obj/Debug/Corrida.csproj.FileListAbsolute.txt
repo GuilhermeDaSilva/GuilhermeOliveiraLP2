@@ -1,6 +1,0 @@
-c:\users\alunoct\documents\visual studio 2013\Projects\Corrida\Corrida\bin\Debug\Corrida.exe.config
-c:\users\alunoct\documents\visual studio 2013\Projects\Corrida\Corrida\obj\Debug\Corrida.csprojResolveAssemblyReference.cache
-c:\users\alunoct\documents\visual studio 2013\Projects\Corrida\Corrida\bin\Debug\Corrida.exe
-c:\users\alunoct\documents\visual studio 2013\Projects\Corrida\Corrida\bin\Debug\Corrida.pdb
-c:\users\alunoct\documents\visual studio 2013\Projects\Corrida\Corrida\obj\Debug\Corrida.exe
-c:\users\alunoct\documents\visual studio 2013\Projects\Corrida\Corrida\obj\Debug\Corrida.pdb

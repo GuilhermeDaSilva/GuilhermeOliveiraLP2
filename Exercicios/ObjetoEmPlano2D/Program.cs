@@ -18,20 +18,31 @@ namespace ObjetoEmPlano2D
             Console.Write("Digite Y incial: ");
             int y = int.Parse(Console.ReadLine());
 
-            while (true)
-            {
-                Objeto2D obj = new Objeto2D();
-                obj.x = x;
-                obj.y = y;
-                Console.Write("Digite comando");
-                ConsoleKey comando = Console.ReadKey().Key;
+            Objeto2D obj = new Objeto2D();
+            
+            obj.x = x;
+            
+            obj.y = y;
+            
+            Console.Write("Digite comando");
+            ConsoleKey comando = Console.ReadKey().Key;
 
+                //if (comando == ConsoleKey.RightArrow)
+                  // {
+                //obj.AndarParaADireita();
+                //Console.WriteLine(obj.Coordenadas());
+            while (comando == ConsoleKey.RightArrow)
+            {
                 if (comando == ConsoleKey.RightArrow)
                 {
                     obj.AndarParaADireita();
-                    Console.WriteLine(obj.Coordenadas());
                 }
-            }
+
+                Console.WriteLine(obj.Coordenadas());
+
+                Console.WriteLine("Escreva um comando ");
+                comando = Console.ReadKey().Key;
+            }         
         }
     }
 }
