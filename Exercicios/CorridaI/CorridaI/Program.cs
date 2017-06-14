@@ -23,10 +23,8 @@ namespace CorridaI
             {
                 Console.WriteLine("Informe o tempo da primeira etapa do competidor {0}", comps[i].nome);
                 comps[i].prim = Convert.ToInt32(Console.ReadLine());
-
                 Console.WriteLine("Informe o tempo da segunda etapa do competidor {0}", comps[i].nome);
                 comps[i].seg = Double.Parse(Console.ReadLine());
-
                 Console.WriteLine("Informe o tempo da terceira etapa do competidor {0}", comps[i].nome);
                 comps[i].terc = Double.Parse(Console.ReadLine());
             }

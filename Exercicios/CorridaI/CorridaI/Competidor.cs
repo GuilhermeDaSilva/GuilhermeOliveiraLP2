@@ -11,7 +11,7 @@ namespace CorridaI
         public double seg;
         public double terc;
         public string nome;
-
+        
         public double contaf()
         {
             double[] tempos = new double[3] { prim, seg, terc };

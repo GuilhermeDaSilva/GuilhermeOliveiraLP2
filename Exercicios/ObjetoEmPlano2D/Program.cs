@@ -27,10 +27,6 @@ namespace ObjetoEmPlano2D
             Console.Write("Digite comando");
             ConsoleKey comando = Console.ReadKey().Key;
 
-                //if (comando == ConsoleKey.RightArrow)
-                  // {
-                //obj.AndarParaADireita();
-                //Console.WriteLine(obj.Coordenadas());
             while (comando == ConsoleKey.RightArrow)
             {
                 if (comando == ConsoleKey.RightArrow)

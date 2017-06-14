@@ -9,7 +9,9 @@ namespace ObjetoEmPlano2D
     class Objeto2D
     {
         public int x;
+
         public int y;
+
         public void AndarParaADireita()
         {
             x=x+3;

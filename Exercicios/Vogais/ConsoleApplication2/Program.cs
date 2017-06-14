@@ -39,9 +39,6 @@ namespace ConsoleApplication2
                 }
             }
             Console.WriteLine(cont);
-
-
-
         }
     }
 }

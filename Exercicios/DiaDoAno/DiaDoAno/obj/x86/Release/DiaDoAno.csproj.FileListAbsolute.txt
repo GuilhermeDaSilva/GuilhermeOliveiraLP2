@@ -4,3 +4,5 @@ C:\Users\Wang Ho Han\AppData\Local\Temporary Projects\DiaDoAno\obj\x86\Release\D
 C:\Users\Wang Ho Han\AppData\Local\Temporary Projects\DiaDoAno\obj\x86\Release\DiaDoAno.pdb
 C:\Users\Wang Ho Han\Desktop\DiaDoAno\DiaDoAno\obj\x86\Release\DiaDoAno.exe
 C:\Users\Wang Ho Han\Desktop\DiaDoAno\DiaDoAno\obj\x86\Release\DiaDoAno.pdb
+C:\Users\Wang Ho Han\Music\GuilhermeOliveiraLP2\Exercicios\DiaDoAno\DiaDoAno\obj\x86\Release\DiaDoAno.exe
+C:\Users\Wang Ho Han\Music\GuilhermeOliveiraLP2\Exercicios\DiaDoAno\DiaDoAno\obj\x86\Release\DiaDoAno.pdb

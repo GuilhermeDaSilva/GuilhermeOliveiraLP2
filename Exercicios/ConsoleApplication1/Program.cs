@@ -11,8 +11,8 @@ namespace ConsoleApplication1
         public struct Carro
         {
             public string modelo;
-            public double km, mot;
-            
+            public double km;
+            public double mot;
         }                               
         static void Main(string[] args)
         {
