@@ -18,6 +18,5 @@ namespace _2_LivrosHermione
             int calcf = npag / pagspdia;
             return calcf;
         }
-
     }
 }
