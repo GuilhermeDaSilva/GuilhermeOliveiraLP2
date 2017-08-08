@@ -16,11 +16,6 @@ namespace _3_Temperatura
             double receberF = obj.ParaFahrenheit();            
             double receberK = obj.ParaKelvin();
             Console.WriteLine("{0}ºF e {1}K",receberF,receberK);
-            
-            
-
-
-
         }
     }
 }
