@@ -8,21 +8,21 @@ namespace _08_Empresas
 {
     class Terceirizado
     {
-        private int registro { get; set; }
+        private int registro;
 
-        private string nome { get; set; }
+        public string nome { get; set; }
 
-        private int cpf { get; set; }
+        private int cpf;
        
-        private string email { get; set; }
+        public string email { get; set; }
         
-        private double sal { get; set; }
+        public double sal { get; set; }
 
-        private string data { get; set; }
+        public string data { get; set; }
 
-        private string gerente { get; set; }
+        public string gerente { get; set; }
 
-        private string empresa { get; set; }
+        public string empresa { get; set; }
 
         public Terceirizado(int registro, string nome, int cpf, string email, double sal, string data, string gerente, string empresa)
         {
@@ -34,10 +34,6 @@ namespace _08_Empresas
             this.data = data;
             this.gerente = gerente;
             this.empresa = empresa;
-        }
-        public string Info()
-        {
-            return String.Format("Nome do(a) Terceirizado(a): {0}.", nome);
         }
     }
 }

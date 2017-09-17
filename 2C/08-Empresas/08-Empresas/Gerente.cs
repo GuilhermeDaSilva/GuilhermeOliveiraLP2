@@ -8,19 +8,19 @@ namespace _08_Empresas
 {
     class Gerente
     {
-        private int registro { get; set; }
+        private int registro;
 
-        private string nome { get; set; }
+        public string nome { get; set; }
 
-        private int cpf { get; set; }
+        private int cpf;
        
-        private string email { get; set; }
+        public string email { get; set; }
         
-        private double sal { get; set; }
+        public double sal { get; set; }
         
-        private double bonus { get; set; }
+        public double bonus { get; set; }
         
-        private string setor { get; set; }
+        public string setor { get; set; }
         
         public Gerente(int registro, string nome, int cpf, string email, double sal, double bonus, string setor)
         {
@@ -31,10 +31,6 @@ namespace _08_Empresas
             this.sal = sal;
             this.bonus = bonus;
             this.setor = setor;
-        }
-        public string Info()
-        {
-            return String.Format("Nome do(a) Gerente: {0}.", nome);
-        }
+        }       
     }
 }

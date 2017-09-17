@@ -8,19 +8,19 @@ namespace _08_Empresas
 {
     class Empregado
     {
-        private int registro { get; set; }
+        private int registro;
 
-        private string nome { get; set; }
+        public string nome { get; set; }
 
-        private int cpf { get; set; }
+        private int cpf;
        
-        private string email { get; set; }
+        public string email { get; set; }
         
-        private double sal { get; set; }
+        public double sal { get; set; }
 
-        private string data { get; set; }
+        public string data { get; set; }
 
-        private string gerente { get; set; }
+        public string gerente { get; set; }
 
         public Empregado(int registro, string nome, int cpf, string email, double sal, string data, string gerente)
         {
@@ -31,10 +31,6 @@ namespace _08_Empresas
             this.sal = sal;
             this.data = data;
             this.gerente = gerente;
-        }
-        public string Info()
-        {
-            return String.Format("Nome do(a) Empregado(a): {0}.", nome);
-        }
+        }        
     }
 }
