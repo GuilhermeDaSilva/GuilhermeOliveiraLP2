@@ -10,6 +10,13 @@ namespace _07_ConversorMedidas
     {
         static void Main(string[] args)
         {
+            Conversor Conversor = new Conversor();
+            Console.WriteLine(Conversor.CParaF(120));
+            Console.WriteLine(Conversor.FtParaM(270));
+            Console.WriteLine(Conversor.MParaKm(890));
+            Console.WriteLine(Conversor.KmParaMi(29));
+            Console.WriteLine(Conversor.InParaFt(78));
+            Console.WriteLine(Conversor.KgParaG(80));
         }
     }
 }
