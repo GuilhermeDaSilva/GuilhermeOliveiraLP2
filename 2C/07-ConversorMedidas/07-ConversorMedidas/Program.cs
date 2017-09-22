@@ -9,8 +9,7 @@ namespace _07_ConversorMedidas
     class Program
     {
         static void Main(string[] args)
-        {
-            Conversor Conversor = new Conversor();
+        {            
             Console.WriteLine(Conversor.CParaF(120));
             Console.WriteLine(Conversor.FtParaM(270));
             Console.WriteLine(Conversor.MParaKm(890));
