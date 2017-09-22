@@ -11,9 +11,8 @@ namespace _08_Empresas
         public double bonus { get; set; }       
         public string setor { get; set; }
         
-        public Gerente(int registro, string nome, int cpf, string email, double sal, double bonus, string setor)
+        public Gerente(string nome, string setor)
         {            
-            this.bonus = bonus;
             this.setor = setor;
         }       
     }

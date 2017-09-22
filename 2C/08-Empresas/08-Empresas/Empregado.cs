@@ -8,12 +8,13 @@ namespace _08_Empresas
 {
     class Empregado : Funcionario
     {
-       
-        public string gerente { get; set; }
+        private string data;
+        public Gerente chefe { get; set; }
+        public string Data { get { return data; } }       
 
-        public Empregado(int registro, string nome, int cpf, string email, double sal, string data, string gerente)
-        {            
-            this.gerente = gerente;
+        public Empregado(string nome, string data)
+        {
+            this.data = data;
         }
         public Empregado() { }
     }

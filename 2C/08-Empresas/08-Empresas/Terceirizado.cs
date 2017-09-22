@@ -10,9 +10,9 @@ namespace _08_Empresas
     {                
         public string empresa { get; set; }
 
-        public Terceirizado(int registro, string nome, int cpf, string email, double sal, string data, string gerente, string empresa)
+        public Terceirizado(string nome, string Empresa)
         {                        
-            this.empresa = empresa;
+            Empresa = empresa;
         }
     }
 }

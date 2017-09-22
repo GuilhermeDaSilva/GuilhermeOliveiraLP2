@@ -11,20 +11,13 @@ namespace _08_Empresas
         private int registro;
         private int cpf;
         public int Registro { get { return registro; } }
-        public int Cpf { get { return cpf; } }
-        public string data { get; set; }
+        public int Cpf { get { return cpf; } }        
         public string nome { get; set; }        
         public string email { get; set; }
-        public double sal { get; set; }
-
-        public Funcionario(int registro, int cpf, string data, string nome, string email, double sal)
+        public double Salario { get; set; }
+        public Funcionario(string nome)
         {
-            this.registro =registro;
-            this.data = data;
             this.nome = nome;
-            this.cpf = cpf;
-            this.email = email;
-            this.sal = sal;
         }
         public Funcionario() { }
     }
