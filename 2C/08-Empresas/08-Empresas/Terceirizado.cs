@@ -10,7 +10,7 @@ namespace _08_Empresas
     {                
         public string empresa { get; set; }
 
-        public Terceirizado(string nome, string Empresa)
+        public Terceirizado(string nome, string data, string Empresa) : base(nome, data)
         {                        
             Empresa = empresa;
         }

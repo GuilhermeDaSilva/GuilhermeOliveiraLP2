@@ -11,7 +11,7 @@ namespace _08_Empresas
         public double bonus { get; set; }       
         public string setor { get; set; }
         
-        public Gerente(string nome, string setor)
+        public Gerente(string nome, string setor) : base(nome)
         {            
             this.setor = setor;
         }       

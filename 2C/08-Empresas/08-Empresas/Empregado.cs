@@ -12,7 +12,7 @@ namespace _08_Empresas
         public Gerente chefe { get; set; }
         public string Data { get { return data; } }       
 
-        public Empregado(string nome, string data)
+        public Empregado(string nome, string data) : base(nome)
         {
             this.data = data;
         }
