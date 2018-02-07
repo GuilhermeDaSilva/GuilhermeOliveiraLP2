@@ -40,7 +40,7 @@ namespace Farmacia
         public string Data { get; set; }
         public string Cargo { get; set; }
 
-        SqlConnection conexao = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Farmacia;Data Source=DESKTOP-2VAOEOR\\SQLEXPRESS");
+        SqlConnection conexao = new SqlConnection("Data Source=EN2LIA_05; Initial Catalog=Farmacia; Integrated Security=SSPI");
         SqlCommand cmd = new SqlCommand();
 
         public void Cadastro()

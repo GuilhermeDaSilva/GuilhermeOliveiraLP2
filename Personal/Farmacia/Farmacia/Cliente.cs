@@ -27,7 +27,7 @@ namespace Farmacia
         public int Telefone { get; set; }
         public DateTime Data = DateTime.Now;
 
-        SqlConnection conexao = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Farmacia;Data Source=DESKTOP-2VAOEOR\\SQLEXPRESS");
+        SqlConnection conexao = new SqlConnection("Data Source=EN2LIA_05; Initial Catalog=Farmacia; Integrated Security=SSPI");
         SqlCommand cmd = new SqlCommand();
 
         public void Cadastro(int telefone)
@@ -61,7 +61,7 @@ namespace Farmacia
           
             
             cmd.Parameters.AddWithValue("@nome", Nome);
-            cmd.Parameters.AddWithValue("@endereco", endereco); 
+            cmd.Parameters.AddWithValue("@endereco", Endereco); 
             cmd.Parameters.AddWithValue("@telefone", Telefone);            
             cmd.Parameters.AddWithValue("@data", Data);
 
@@ -97,6 +97,7 @@ namespace Farmacia
             cmd.Connection.Open();
             SqlDataReader reader = cmd.ExecuteReader();
 
+
             if(reader.HasRows)
             {
                 while(reader.Read())
@@ -105,6 +106,8 @@ namespace Farmacia
                     endereco = reader.GetString(1);
 
                     Console.WriteLine("Cliente já cadastrado!\n Nome: {0}\n Endereço: {1}\n Telefone: {2}", Nome, endereco, telefone);
+                    
+
                 }
             }
 

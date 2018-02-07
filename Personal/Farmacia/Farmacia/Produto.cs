@@ -33,7 +33,7 @@ namespace Farmacia
         public int Estoque { get; set; }
         public string Referencia { get; set; }
 
-        SqlConnection conexao = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Farmacia;Data Source=DESKTOP-2VAOEOR\\SQLEXPRESS");
+        SqlConnection conexao = new SqlConnection("Data Source=EN2LIA_05; Initial Catalog=Farmacia; Integrated Security=SSPI");
         SqlCommand cmd = new SqlCommand();
 
 
@@ -123,7 +123,7 @@ namespace Farmacia
                 Console.ReadKey();
             }       
             
-            while ( finalizar != ConsoleKey.Enter);
+            while ( finalizar != ConsoleKey.K);
         }
 
 
@@ -152,6 +152,7 @@ namespace Farmacia
                 qtdcompra = qtdcompra + qtdprod;
                 UpdateEstoque(codigo, estoque - qtdprod);                                     
             }
+            
            
         }
 
@@ -236,19 +237,26 @@ namespace Farmacia
                     Referencia = reader.GetString(4);
 
                     Console.WriteLine("{0}  {1}  {2}   {3}", codigo, nome, marca, preco);
+
+                    
                 }
-
-                cmd.CommandText = string.Format(@"SELECT codigo, nome, marca, preco, referencia
-                                                  FROM Produto
-                                                  WHERE referencia = {0}", Referencia);
-
+                //cmd.Connection.Close();
                 
 
-                if(reader.HasRows)
-                {
-                    Console.WriteLine("OUTROS: ");
+                //cmd.CommandText = string.Format(@"SELECT codigo, nome, marca, preco, referencia
+                                                  //FROM Produto
+                                                  //WHERE referencia = {0}", Referencia);
 
-                    while(reader.Read())
+                //cmd.Connection.Open();
+                //cmd.ExecuteReader();
+                
+                                        
+
+                //if(reader.HasRows)
+                //
+                  //  Console.WriteLine("OUTROS: ");
+
+                    /*while(reader.Read())
                     {
                         codigo = reader.GetInt32(0);
                         nome = reader.GetString(1);
@@ -262,15 +270,15 @@ namespace Farmacia
 
                 else
                 {
-                    Console.WriteLine("Não foram encontrados outros produtos parecidos!");
-                }
+                    Console.WriteLine("Não foram encontrados outros produtos parecidos!"); 
+                }*/
             }
 
             else
             {
                 Console.WriteLine("Produto não encontrado!");
             }
-
+                
             cmd.Connection.Close();
         }
 
@@ -298,16 +306,7 @@ namespace Farmacia
 
         public void ControleDeValidade(string data)
         {
-            cmd.Connection = conexao;
-            cmd.CommandText = string.Format(@"SELECT validade
-                                              FROM Produto");
-                                              
-            cmd.Connection.Open();
-            SqlDataReader reader = cmd.ExecuteReader();
             
-            Validade = reader.GetString(0);
-
-            Console.WriteLine(Validade);
         }
         
 
